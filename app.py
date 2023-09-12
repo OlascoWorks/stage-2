@@ -57,10 +57,11 @@ def person_endpoint():
                     new_person = Person(name=name)
                     db.session.add(new_person)
                     db.session.commit()
+                    created_person = Person.query.filter_by(name=name).first()
                     res = {
                         "message": "Successfully created new person",
-                        "name": person.name,
-                        "id": person.id
+                        "name": created_person.name,
+                        "id": created_person.id
                     }
                     return jsonify(res), 201
             except IntegrityError:
