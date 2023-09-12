@@ -112,5 +112,3 @@ def person_endpoint():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-# postgres://hng_stage2_user:bXYUIaTt0ErLk44HYNnowZ3p8V3VeHA5@dpg-cjvf38nhdsdc73e2be4g-a.oregon-postgres.render.com/hng_stage2
