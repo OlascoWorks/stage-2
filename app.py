@@ -57,7 +57,12 @@ def person_endpoint():
                     new_person = Person(name=name)
                     db.session.add(new_person)
                     db.session.commit()
-                    return jsonify({ "message": "Succesfully created new person"}), 201
+                    res = {
+                        "message": "Successfully created new person",
+                        "name": person.name,
+                        "id": person.id
+                    }
+                    return jsonify(res), 201
             except IntegrityError:
                 return jsonify({ "message": "'name' should be a unique value"}), 400
             except KeyError:
