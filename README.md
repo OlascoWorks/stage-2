@@ -2,22 +2,22 @@
 This is a simple API that performs basic CRUD (Create, Read, Update, Delete) operations on a "person" resource.
 
 
-### Table Of Contents
-- Getting Started
-  - Prerequisites
-  - Setup
-  - Installation
-- Running
-- Documentation
+## Table Of Contents
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Installation](#installation)
+- [Running](#running-the-app)
+- [Documentation](#documentation)
 
 
 ## Getting Started
-# Prerequisites
+### Prerequisites
 To utilize this API, you need to have the following installed on your machine:
 - Python 3.x
 - [Postman](https://www.postman.com/downloads/) (for testing purposes) [Optional]
 
-# Setup
+### Setup
 1. Create a new folder to house your API
 2. Set your environment variables ny running the following in the command line:
    Windows and Mac
@@ -35,18 +35,18 @@ To utilize this API, you need to have the following installed on your machine:
    git clone https://github.com/OlascoWorks/stage-2.git
    ```
 
-# Installation
+### Installation
 1. To install all the required dependencies, run:
    ```
    pip install -r requirements.txt
    ```
 
-# Running
+### Running The App
 To run this, run the following command in your terminal
 ```
 python app.py
 ```
 If successful, you should see a message in your terminal `serving flask app "app.py"`
 
-# Documentation
-Please refer to the [Documentation]() of this API to read details
+### Documentation
+Please refer to the [Documentation](https://github.com/OlascoWorks/stage-2/blob/main/DOCUMENTATION.md) of this API to read details
