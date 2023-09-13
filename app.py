@@ -73,7 +73,7 @@ def person_endpoint():
             except Exception as e:
                 return jsonify({ "message": f"There was an unexpected error processing the request. Error - {e}"}), 400
             
-        elif request.method == 'PATCH':
+        elif request.method == 'PUT':
             try:
                 id = request.json['id']
                 new_name = request.json['new_name']
