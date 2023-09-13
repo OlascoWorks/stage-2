@@ -29,7 +29,7 @@ def delete_person(id):
     db.session.commit()
 
 # route for creating new person
-@app.route('/api', methods=['GET', 'POST', 'PATCH', 'DELETE'])
+@app.route('/api', methods=['GET', 'POST', 'PUT', 'DELETE'])
 def person_endpoint():
     if request.is_json:
         if request.method == 'GET':
